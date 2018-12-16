@@ -18,7 +18,7 @@ meetup organizer(s) to prioritize questions most users are interested in.
 2. Vanilla Javascript ES6
 3. NodeJs/ Express
 # Tools
-1. Server side Framework:Node / Express
-2. Linting Library:ESLint
-3. Style Guide:Airbnb
-4. Testing Framework:Mocha or Jasmine
+1. Server side Framework:[Node ]/ [Express]
+2. Linting Library:[ESLint]
+3. Style Guide:[Airbnb]
+4. Testing Framework:[Mocha] or [Jasmine]
