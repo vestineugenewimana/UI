@@ -32,6 +32,9 @@ button {
 button:hover {
   opacity:1;
 }
+h2{
+  color: Navy;
+}
 
 /* Extra styles for the cancel button */
 .cancelbtn {
