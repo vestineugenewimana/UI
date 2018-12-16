@@ -1,0 +1,68 @@
+body{
+	font-family: Arial,Helvetica,Sans-Serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: #f4f4f4;
+}
+header{
+	background-color: #001f3f;
+	color: #ffffff;
+	padding-top:30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}#container{
+	width: 80%;
+	height: 40%;
+	margin: auto;
+	padding-top: 36px;
+	background: url('andela.jpg');
+	background-repeat: no-repeat;
+	padding-bottom: 300px;
+	overflow: hidden;
+	font-size: 12px;
+}
+#container h1{
+	color: Navy;
+}
+#container p{
+	color: black;
+}
+#page-section{
+	text-align: center;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header ul li{
+	float:left;
+	display: inline;
+	padding: 0px 20px 0px 20px;
+}
+header #app-header{
+	float: left;
+}
+header #app-header h1{
+	margin: 0;
+}
+header nav{
+	float: right;
+	padding-top: 0px;
+}
+header .highlight, header .current a{
+	color: #e8491d;
+	font-weight: bold;
+}
+footer{
+	text-align: center;
+	background-color: #001f3f;
+	color: white;
+	font-size: 16px;
+	padding:10px 0 10px 0;
+}
