@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login and registration form</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	<div class="wrapper">
+            <nav class="topnav">
+                <a class="active" href="home.html">Home</a>
+                </div>
+              </nav>
+        
+            <h4 id='login-title'> Create an Account</h4>
+<div class="login-page">
+	<div class="form">
+		<form class="register-form" action="login.html">
+			<input type="text" name="firstName" placeholder="firstName" required="firstName is required">
+			<input type="text" name="lastName"  placeholder="lastName" required="lastName is required">
+			<input type="text" name="otherNames" placeholder="otherNames">
+			<input type="email" name="email" placeholder="email" required="email is required">
+			<input type="text" name="phoneNumber" placeholder="phoneNumber" required="phoneNumber is required">
+			<input type="text" name="userName" placeholder="userName" required="userName is required">
+			<input type="date" name="registred" placeholder="Date" required="date required">
+			<input type="password" name="password" placeholder="password" required="password is required">
+			<input type="text" name="isAdmin" placeholder="enter true or false">
+			<button>Signup</button>
+			<P class="message"> Already Registered?<a href="#" id="sign-in">login</a></P>
+		</form>
+		<form class="login-form" action="dashboard.html">
+			<input type="text" name="userName" placeholder="userName" required="userName is required">
+			<input type="password" name="password" placeholder="password" required="password is required">
+			<button>login</button>
+			<p class="message">Not Registered?<a href="#" id="create-account">SignUp</a></p>
+		</form>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script >
+	$('.message a').click(function(){
+	$('form').animate({height:"toggle",opacity:"toggle"},"slow");
+	});
+	window.onload = function() {
+  const loginBtn = document.getElementById('sign-in');
+  const registerBtn = document.getElementById('create-account');
+  const title = document.getElementById('login-title');
+
+  registerBtn.onclick = function(event) {
+    title.innerHTML = 'Create an Account';
+  };
+  loginBtn.onclick = function(event) {
+    title.innerHTML = 'Sign In';
+  };
+};
+</script>
+</body>
+</html>
+
+
