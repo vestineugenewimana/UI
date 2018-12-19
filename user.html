@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to Questioner</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  
+  <header>
+    <div class="wrapper">
+      <ul class="nav-area">
+          <li> <a href="#view-meetup" class="myButton">DASHBOARD</a></li>
+          <li> <a href="#profile-modal" class="myButton">PROFILE</a></li>
+          <li> <a href="home.html" class="myButton">Logout</a></li>
+        </ul>
+  </div>
+  <div class="modal-container" id="modal">
+    <div class="modal">
+      <a href="#" class="close">x</a>
+      <span class="modal-heading">
+        POST NEW QUESTION
+      </span>
+      <form action="#" method="POST">
+        <input type="text" name="questionid" placeholder="questionid" required=""><br>
+        <input type="date" name="createdon"  placeholder="createdon" required=""><br>
+        <input type="text" name="questionby" placeholder="createdby" required=""><br>
+        <input type="number" name="meetup"     placeholder="meetup" required=""><br>
+        <input type="text" name="body" placeholder="body" required=""><br>
+        <input type="text" name="title" placeholder="title" required=""><br>
+        <input type="submit" class="btn-post" value="POST">
+      </form>
+    </div>
+  </div>
+  <div class="modal-container" id="profile-modal">
+      <div class="profile">
+        <a href="#" class="close-meetup">close</a>
+        <table>
+                    <caption>User Profile Summary</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">email</th>
+                        <th scope="col">Number of Question  Posted</th>
+                        <th scope="col">Number of Question  Commented</th>
+                        <th scope="col">Top Questions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr data-id="01">
+                        <td data-label="firstname">Manzi</td>
+                        <td data-label="lastname">Fred</td>
+                        <td data-label="email">manzi@gmail.com</td>
+                        <td data-label="Posted">2</td>
+                        <td data-label="Commented">5</td>
+                        <td data-label="Top">2</td>
+                      </tr>
+                       <tr data-id="01">
+                        <td data-label="firstname">Gashema</td>
+                        <td data-label="lastname">Steven</td>
+                        <td data-label="email">steven@gmail.com</td>
+                        <td data-label="Posted">2</td>
+                        <td data-label="Commented">5</td>
+                        <td data-label="Top">2</td>
+                      </tr>
+                    <tfoot>
+                    </tfoot>
+                  </table>
+              </div>
+            </div>
+  <div class="modal-container" id="post-modal">
+    <div class="comment">
+      <a href="#" class="close">x</a>
+      <span class="modal-comment-heading">
+        COMMENT ON QUESTION
+       </span>
+      <form action="#" method="POST">
+        <input type="firstname" name="firstname" placeholder="enter your firstname" required="">
+        <input type="lastname" name="lastname" placeholder="enter your lastname" required="">
+        <input type="number" name="meetup" placeholder="meetup id to comment on" required="">
+        <textarea rows="4" cols="50" name="Comment" required="">enter you comment here</textarea>
+        <input type="submit" class="btn-submit" value="submit">
+      </form>
+    </div>
+  </div>
+ <div class="modal-container" id="view-meetup">
+      <div class="meetup">
+        <a href="#" class="close-meetup">close</a>
+        <table>
+                    <caption>Posted Meetup Summary</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Meetup Id</th>
+                        <th scope="col">Created on</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Images</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Happen on</th>
+                        <th scope="col">Tags</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr data-id="01">
+                        <td data-label="MeetupId">001</td>
+                        <td data-label="createdon">04/01/2019</td>
+                        <td data-label="Location">Kigali</td>
+                        <td data-label="Images"> None </td>
+                         <td data-label="Topic"> Agile development</td>
+                        <td data-label="Happenon">18/01/2019 </td>
+                        <td data-label="Tags"> nnnn</td>
+                        <td data-label="Action"><a class="edit-order">Edit</a> <a class="delete-order">Cancel</a> </td>
+                      </tr>
+                    <tfoot>
+                    </tfoot>
+                  </table>
+                  <p  class="new-order-p"><button><a href="#modal" class="myButton" id="btn-body">POST QUESTION</a></button></p>
+
+
+
+                   <table>
+                    <caption>Asked Question Summary</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Question Id</th>
+                        <th scope="col">Created on</th>
+                        <th scope="col">Created By</th>
+                        <th scope="col">Meetup</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Body</th>
+                        <th scope="col">Votes</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr data-id="01">
+                        <td data-label="questionId">1</td>
+                        <td data-label="createdon">04/12/2018</td>
+                        <td data-label="createdby">Manzi Fred</td>
+                        <td data-label="meetup"> 001</td>
+                        <td data-label="title"> Agile development </td>
+                        <td data-label="body"> what time ?</td>
+                        <td data-label="Votes"> 3</td>
+                        <td data-label="Action"><button><a class="btn-vote-1">Upvote</a><button><button> <a class="btn-vote-2">Downvote</a><button></td>
+                      </tr>
+                    <tfoot>
+                    </tfoot>
+                  </table>
+                  <p  class="new-order-p"><button><a href="#post-modal" class="myButton" id="btn-body">COMMENT ON QUESTION</a></button></p>
+    </div>
+      </div>
+    </div>
+      </div>
+     
+  </header>
+   
+  <div class="footer">
+    <p>
+      Copyright &copy; 2018 Questioner
+    </p>
+  </div>
+</body>
+
+</html>
