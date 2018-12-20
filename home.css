@@ -8,7 +8,7 @@
     margin: auto
 }
 header{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('image.jpg');
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/image.jpg');
     height: 150vh;
     background-size: cover;
     background-position: center, center;
@@ -90,13 +90,19 @@ header{
 }
 /*modal*/
 .modal-container{
- width: 100%;
+ margin-top: 100px;
+ width: 90%;
+ margin-left: 40px;
  height: 100%;
  position: fixed;
  pointer-events: none;
  opacity: 0;
  transition: all 500ms ease;
+ background:#ffffff; 
+ max-height: calc(100vh - 210px);
+    overflow-y: auto;
 }
+
 .modal-container:target{
     opacity:1;
     pointer-events: auto;
@@ -153,7 +159,7 @@ box-shadow: 0px 0px 50px 5px black;
     display: block;
     height: 60px;
     margin-bottom: 30px;
-    color: yellow;
+    color: black;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
@@ -360,5 +366,36 @@ table {
   }
 
 
+.container{
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  width: 100%;
+  grid-gap:113px;
+}
+.container p{
+  font-family: "Robot",sans-self;
+  font-size: 12px;
+  color: black;
 
+}
+.container h3{
+   font-family: "Robot",sans-self;
+  color: black;
 
+}
+header #app-header{
+  float: left;
+  padding-top: 20PX;
+  color: #ffffff;
+}
+header #app-header h1{
+  margin: 0;
+}
+header nav{
+  float: right;
+  padding-top: 0px;
+}
+header .highlight, header .current a{
+  color: #e8491d;
+  font-weight: bold;
+}
