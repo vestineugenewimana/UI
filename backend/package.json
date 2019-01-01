@@ -4,12 +4,16 @@
   "description": "restful api",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "author": "Fredmanzi",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "scripts":{
+   "start": "node server.js"
   }
 }
