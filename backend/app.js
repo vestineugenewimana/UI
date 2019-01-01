@@ -1,0 +1,11 @@
+const express = require('express');
+const app =express();
+const bodyparsel = require('body-parser');
+app.use(express.json());
+const meetupRoutes = require('./api/routes/meetups');
+const questionRoutes = require('./api/routes/questins');
+app.use(bodyparsel.urlencoded({extended:false}));
+app.use(bodyparsel.json());
+app.use('/api/v1/meetups',meetupRoutes);
+app.use('/api/v1/questions',questionRoutes);
+module.exports=app;
