@@ -1,19 +1,12 @@
-# single test suite, non-parallel build.
 
 env:
   global:
-    - CC_TEST_REPORTER_ID=ABC123
-language: nodejs
-rvm:
-  - 2.2.0
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
-script:
-  - bundle exec rspec
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-service_name: travis-pro
-repo_token: ZfpRoEvp7XVZwkbM4enow3jVUcqi87O1J
-gem 'coveralls', require: false
+    - NODE_ENV=test
+language: node_js
+node_js:
+  - "10.14.2"
+script: npm run test
+after_success:
+  - npm run coverage
+notifications:
+  email: false
