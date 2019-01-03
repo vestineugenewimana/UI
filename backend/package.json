@@ -4,7 +4,8 @@
   "description": "restful api",
   "main": "server.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "start":"node server.js"
   },
   "author": "Fredmanzi",
   "license": "ISC",
@@ -12,8 +13,6 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "request": "^2.88.0"
-  },
-  "scripts":{
-   "start": "node server.js"
   }
+ 
 }
