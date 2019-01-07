@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jasmine",
+    "postinstall": "npm run build",
     "start": "node server.js"
   },
   "author": "Fredmanzi",
